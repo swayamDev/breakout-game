@@ -1,0 +1,80 @@
+body {
+    font-family: "Sour Gummy", serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  h1 {
+    margin-top: 10px;
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-family: "Iceland", serif;
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    position: relative;
+    margin: 20px auto;
+    width: 560px;
+    height: 300px;
+    border: solid 2px white;
+    background: linear-gradient(to bottom, #333, #555);
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border-radius: 10px;
+  }
+  
+  .block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(to bottom, #32a852, #3dbf7d);
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, red, yellow);
+    animation: bounce 0.5s infinite;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #32a852;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #3dbf7d;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
